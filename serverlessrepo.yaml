@@ -11,6 +11,6 @@ SemanticVersion: 1.0.6
 SourceCodeUrl: https://github.com/BryanKMorrow/Serverless-Goat
 SpdxLicenseId: AGPL-3.0-or-later
 public: false
-S3Bucket: aqua-serverless-goat
+S3Bucket: serverless-goat
 AWSProfile: default
 Region: us-east-1
