@@ -7,6 +7,7 @@ import sys
 import time
 import yaml
 import urllib.request
+import ssl
 
 
 def get_application(serverlessrepo, application_name):
@@ -55,7 +56,10 @@ def main():
     license_txt_file.close()
 
     if application:
-        old_license_txt_str = urllib.request.urlopen(application["LicenseUrl"]).read().decode()
+        ctx = ssl.create_default_context()
+        ctx.check_hostname = False
+        ctx.verify_mode = ssl.CERT_NONE
+        old_license_txt_str = urllib.request.urlopen(application["LicenseUrl"], context=ctx).read().decode()
         if old_license_txt_str == license_txt_str and config["SpdxLicenseId"] == application["SpdxLicenseId"]:
             print("Updating application...")
             application = serverlessrepo.update_application(
