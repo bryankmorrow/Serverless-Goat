@@ -1,5 +1,22 @@
 {
   "name": "frontend",
-  "version": "0.1.0",
-  "private": true
+  "version": "0.1.1",
+  "private": true,
+  "dependencies": {
+    "bluebird": "^3.4.7",
+    "cli-spinner": "^0.2.5",
+    "date-fns": "^1.24.0",
+    "deep-diff": "^0.3.4",
+    "github": "^7.3.2",
+    "github-webhook-handler": "^0.6.0",
+    "google-auth-library": "^0.10.0",
+    "hashmap": "^2.1.0",
+    "httpdispatcher": "^2.0.1",
+    "js-base64": "^2.1.9",
+    "mkdirp": "^0.5.1",
+    "request": "^2.79.0",
+    "rimraf": "^2.5.4",
+    "tmp": "0.0.31",
+    "url-parse": "^1.1.8"
+  }
 }
