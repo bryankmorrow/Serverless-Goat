@@ -12,5 +12,5 @@ SourceCodeUrl: https://github.com/BryanKMorrow/Serverless-Goat
 SpdxLicenseId: AGPL-3.0-or-later
 public: false
 S3Bucket: serverless-goat-1
-AWSProfile: cto
+AWSProfile: default
 Region: us-east-2
