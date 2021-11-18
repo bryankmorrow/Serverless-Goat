@@ -1,6 +1,7 @@
 const child_process = require('child_process');
 const AWS = require('aws-sdk');
 const uuid = require('node-uuid');
+const fs = require('fs');
 
 async function log(event) {
   const docClient = new AWS.DynamoDB.DocumentClient();

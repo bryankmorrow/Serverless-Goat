@@ -5,7 +5,7 @@ Globals:
   Function:
     Runtime: nodejs14.x
     Handler: index.handler
-    MemorySize: 3008
+    MemorySize: 128
     Timeout: 10
 
 Resources:
